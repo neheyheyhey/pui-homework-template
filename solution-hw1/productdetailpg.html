@@ -27,30 +27,36 @@
         <img class = "ogcinroll" src="../assets/products/original-cinnamon-roll.jpg"/>
         <p> customize our delicious. hand-made cinnamon rolls to your liking </p>
       </div>
-<!-- Used W3 schools for this to help me out with dropdown and how to construct one: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+<!-- Used W3 schools for this to help me out with dropdown and how to construct one: https://www.w3schools.com/tags/tag_select.asp -->
       <div class="dropdownglz">
-        <p> Glazing: </p>
-        <button class="dropdownglzbtn"> Dropdown</button>
-        <div class="optionsglaz">
-          <a href="#og"> Keep origninal</a>
-          <a href="#sm"> Sugar milk</a>
-          <a href="#vm"> Vanilla milk</a>
-          <a href="#dc"> Double chocolate</a>
-        </div>
+        <label for="dropdownglz"> Glazing:</label>
+
+         <select name="Keep original" id="dropdown">
+          <option value="Keep origninal"> Keep original</option>
+          <option value="Sugar milk"> Sugar milk</option>
+          <option value="Vanilla milk" >Vanilla milk</option>
+          <option value="Double chocolate"> Double chocolate</option>
+         </select>
+
+        </label> 
+
       </div>
 
       <div class="dropdownps">
-        <p> Pack size: </p>
-        <button class="dropdownpsbtn"> Dropdown</button>
-        <div class="optionsps">
-          <a href="#1"> 1</a>
-          <a href="#3"> 3</a>
-          <a href="#6"> 6</a>
-          <a href="#12"> 12</a>
-        </div>
+        <label for="dropdownps"> Pack Size:</label>
+
+         <select name="one" id="1">
+          <option value="one"> 1</option>
+          <option value="three"> 3</option>
+          <option value="six"> 6</option>
+          <option value="twelve" > 12</option>
+         </select>
+         
+        </label> 
       </div>
 
-      <p> $2.49 </p>
+      <p> $2.49 <button> Add to Cart </button></p>
+
 
     </main>
   </body>
