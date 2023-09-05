@@ -1,116 +1,76 @@
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
 }
-
 hr{
     height: 5px; 
     background-color: black;
 }
-
 .menu{
     text-align: center; 
-    
 }
-/*why does it not work if i add the contents of #product-page into into menu bar */
-#product-page{
-    text-decoration: none;
+.on {
     font-size: 18px;
     color: black;
-
+    font-weight: bold;
+    background-color: yellow;
 }
-
-#cart-page{
-    text-decoration: none;
+.off {
     font-size: 18px;
     color: black;
 }
-
-h1{
+h1 {
     padding-top: 3rem; 
     padding-top: 2rem; 
     font-weight: normal;
     font-size: 20px;
     text-align: center;
 }
-
-h2{
-    font-weight: normal;
-    font-size: 18px;
+p {
+    color:black;
 }
+a {
+    text-decoration: none;
+}
+ .box {
+    width: 420px;
+    margin: auto;
+    text-align: center;
+ }
 
-/*if my width is 400 px is my height automatically 400px?
-Do i need to underline original cinnamon roll?
-how to add border around image?
- */
-
-.ogcinroll{
-    max-width: 400px;
+.product-card { 
+    width: 420px;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
-    line-height: 1;
-
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 1px; 
+    margin-bottom: 15px;
 }
-.ogcinroll img{
-    border: 2px solid black; 
-}
-/* it isn't highlighting my image too*/
-.ogcinroll:hover{
+.product-card:hover {
     background-color: yellow;
-    cursor: pointer
+    font-weight:bold;
 }
 
-.appcinroll{
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14px;
-}
-.appcinroll img{
+.product-image {
     border: 2px solid black; 
+    width: 400px;
+}
+.product-description {
+    text-align: left;
+    margin: auto;
+    width: 400px;
 }
 
-.raiscinroll{
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14px;
+.product-name {
+    color:black;
+    text-decoration: underline;
+    margin: 0;
 }
-.raiscinroll img{
-    border: 2px solid black; 
-}
-
-.walcinroll{
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14px;
-}
-.walcinroll img{
-    border: 2px solid black; 
-}
-
-.dccinroll{
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14px;
-}
-.dccinroll img{
-    border: 2px solid black; 
-}
-
-/* why is the spacing between the image and text so close?*/
-
-.strcinroll{
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 14px;
+.product-price {
+    margin:0;
+    font-weight: normal;
     
 }
-.strcinroll img{
-    border: 2px solid black; 
-}
-
