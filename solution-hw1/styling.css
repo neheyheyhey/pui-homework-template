@@ -1,0 +1,116 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+hr{
+    height: 5px; 
+    background-color: black;
+}
+
+.menu{
+    text-align: center; 
+    
+}
+/*why does it not work if i add the contents of #product-page into into menu bar */
+#product-page{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+}
+
+#cart-page{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+h1{
+    padding-top: 3rem; 
+    padding-top: 2rem; 
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/*if my width is 400 px is my height automatically 400px?
+Do i need to underline original cinnamon roll?
+how to add border around image?
+ */
+
+.ogcinroll{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 1;
+
+}
+.ogcinroll img{
+    border: 2px solid black; 
+}
+/* it isn't highlighting my image too*/
+.ogcinroll:hover{
+    background-color: yellow;
+    cursor: pointer
+}
+
+.appcinroll{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.appcinroll img{
+    border: 2px solid black; 
+}
+
+.raiscinroll{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.raiscinroll img{
+    border: 2px solid black; 
+}
+
+.walcinroll{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.walcinroll img{
+    border: 2px solid black; 
+}
+
+.dccinroll{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.dccinroll img{
+    border: 2px solid black; 
+}
+
+/* why is the spacing between the image and text so close?*/
+
+.strcinroll{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    
+}
+.strcinroll img{
+    border: 2px solid black; 
+}
+
