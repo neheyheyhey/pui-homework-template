@@ -76,6 +76,16 @@ a {
     
 }
 /* ------------------- break ---------------*/
+.box-product-detail {
+    width: center;
+    margin: auto;
+    text-align: center;
+ }
+
+.product-image-productdetail{
+    border: 2px solid black; 
+    width: 600px;
+}
 
 .product-description-details {
     margin: auto;
