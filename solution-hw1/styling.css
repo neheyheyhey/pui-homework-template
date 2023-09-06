@@ -19,6 +19,7 @@ hr{
     font-size: 18px;
     color: black;
 }
+
 h1 {
     padding-top: 3rem; 
     padding-top: 2rem; 
@@ -74,3 +75,50 @@ a {
     font-weight: normal;
     
 }
+/* ------------------- break ---------------*/
+
+.product-description-details {
+    margin: auto;
+    width: 210px;
+    font-size: 14px;
+}
+.description-details {
+    text-align: left; 
+}
+
+.drop-down{
+    margin: auto;
+    width: 210px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 45px;
+}
+.glaze-group{
+    line-height: 20px; 
+    padding-top: 25px;
+}
+
+.pack-group{
+    line-height: 20px;
+    padding-top: 20px ;
+    padding-bottom: 35px;
+}
+
+#dropdown {
+    width: 210px;
+}
+
+.cart {
+    text-align: right;
+    font-weight: bold;
+    word-spacing: 50px;
+}
+button {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* ------------------- break ---------------*/
+
+
+

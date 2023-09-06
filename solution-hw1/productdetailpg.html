@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <link rel="styling" href="styling.css">
+  <link rel="stylesheet" href="styling.css">
 
   <head>
-    <title>Product Detail Page</title>
+    <title>Product Gallery</title>
   </head>
-  
-  <body>
-   
-    <header>
-      <img src="../assets/logo/logo-01.svg" width="400px"/> 
-      <hr>
 
-      <div>
-        <h2><a id = "product-page" href="./productdetailpg.html">PRODUCTS</a></h2> 
-        <h2><a id = "cart-page" href="./cart.html">CART</a></h2> 
-      </div>
+  <body>  
+    <header>
+      <a href="./index.html"> <img src="../assets/logo/logo-01.svg" width="400px"/></a> 
+      <hr>
+      <nav class="menu">
+        <p><a class = "on" href="./index.html">PRODUCTS</a></p> 
+        <p><a class = "off" href="./cart.html">CART</a></p> 
+      </nav>
     </header>
 
     <main>
-      <h1> Original cinnamon roll </h1>
+      <h1> Our hand-made cinnamon rolls </h1>
 
-      <div class = "ogcinroll">
-        <img class = "ogcinroll" src="../assets/products/original-cinnamon-roll.jpg"/>
-        <p> customize our delicious. hand-made cinnamon rolls to your liking </p>
+      <div class = "box">
+        <img class = "product-image" src="../assets/products/original-cinnamon-roll.jpg"/>
+        <div class="product-description-details">
+         <p class="description-details">Customize our delicious, hand-made cinnamon roll to your liking!</p>
       </div>
 <!-- Used W3 schools for this to help me out with dropdown and how to construct one: https://www.w3schools.com/tags/tag_select.asp -->
-      <div class="dropdownglz">
-        <label for="dropdownglz"> Glazing:</label>
-
-         <select name="Keep original" id="dropdown">
-          <option value="Keep origninal"> Keep original</option>
-          <option value="Sugar milk"> Sugar milk</option>
-          <option value="Vanilla milk" >Vanilla milk</option>
-          <option value="Double chocolate"> Double chocolate</option>
-         </select>
-
-        </label> 
-
+      <div class="drop-down">
+        <div class="glaze-group">
+          <label for="drop-down"> Glazing: <br></label>
+          <select name="Keep original" id="dropdown">
+           <option value="Keep origninal"> Keep original</option>
+           <option value="Sugar milk"> Sugar milk</option>
+           <option value="Vanilla milk" >Vanilla milk</option>
+           <option value="Double chocolate"> Double chocolate</option>
+          </select>
+         </label> 
+        </div>
+        <div class="pack-group">
+          <label for="drop-down"> Pack size:<br></label>
+           <select name="one" id="dropdown">
+            <option value="one"> 1</option>
+            <option value="three"> 3</option>
+            <option value="six"> 6</option>
+            <option value="twelve" > 12</option>
+           </select>
+          </label> 
+        </div>
+        <div class="cart">
+          <p> $2.49 <button> Add to Cart </button>
+          </p>
+        </div>
       </div>
-
-      <div class="dropdownps">
-        <label for="dropdownps"> Pack Size:</label>
-
-         <select name="one" id="1">
-          <option value="one"> 1</option>
-          <option value="three"> 3</option>
-          <option value="six"> 6</option>
-          <option value="twelve" > 12</option>
-         </select>
-         
-        </label> 
-      </div>
-
-      <p> $2.49 <button> Add to Cart </button></p>
-
-
     </main>
   </body>
 </html>
