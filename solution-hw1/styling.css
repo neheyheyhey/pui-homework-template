@@ -114,7 +114,10 @@ a {
     padding-bottom: 35px;
 }
 
-#dropdown {
+#dropdown-1 {
+    width: 210px;
+}
+#dropdown-2 {
     width: 210px;
 }
 
