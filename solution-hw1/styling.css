@@ -130,5 +130,27 @@ button {
 
 /* ------------------- break ---------------*/
 
+.product-image-cart{
+    border: 2px solid black; 
+    width: 200px;
 
+}
 
+.product-description-details {
+    width: 210px;
+    font-size: 14px;
+}
+
+.product-cart {
+    font-size: 14px;
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 1px; 
+    margin-bottom: 15px;
+}
+#remove {
+    text-decoration: underline;
+    font-size: 10px;
+    margin-top: 0;
+}
