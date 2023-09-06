@@ -122,9 +122,10 @@ a {
 }
 
 .cart {
+    width:650px;
     text-align: right;
     font-weight: bold;
-    word-spacing: 50px;
+    word-spacing: 45px;
 }
 button {
     background-color: yellow;
