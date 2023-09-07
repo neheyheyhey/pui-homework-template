@@ -122,8 +122,7 @@ a {
 }
 
 .cart {
-    width:690px;
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     word-spacing: 45px;
 }
