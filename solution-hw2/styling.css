@@ -132,37 +132,67 @@ button {
     padding: 10px 10px;
     border: 2px solid black;
 }
-/* ------------------- break ---------------*/
+/* ------------------- pg3 ---------------*/
+.box-product-detail {
+    display: flex; 
+    margin-left: 34.72%;
+    flex-flow: column wrap; 
+    justify-content: flex-start;
+}
+.product-cart {
+    justify-content: flex-start;
+    gap: 50px; 
+}
+.cart-description {
+    width: 60%;
+}
+.cart-img-div {
+    width: 14%; 
+}
+.total {
+    display: flex; 
+    font-size: 18px; 
+    justify-content: flex-end;    
+    gap: 475px;
+    margin-right: 40px;
+}
+.checkout-but {
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 39px;
+    margin-top: 20px; 
+}
 .product-image-cart{
     border: 2px solid black; 
-    width: 200px;
-
+    width: 115px;
 }
-
 .product-description-details {
     width: 210px;
-    font-size: 14px;
+    font-size: 18px;
 }
-
 .product-cart {
-    font-size: 14px;
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
     height: auto;
     padding-top: 10px;
     padding-bottom: 1px; 
     margin-bottom: 15px;
+
+    display: flex;
 }
 #remove-1 {
     text-decoration: underline;
     font-size: 10px;
     margin-top: 0;
+    font-weight: bold;
 }
 #remove-2 {
     text-decoration: underline;
     font-size: 10px;
     margin-top: 0;
+    font-weight: bold;
 }
-/* ------------------- flex ---------------*/
+/* ------------------- nav ---------------*/
 
 .head {
     display: flex;
