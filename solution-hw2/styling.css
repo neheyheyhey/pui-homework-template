@@ -91,35 +91,41 @@ a {
 .drop-down{
     text-align: left;
     font-size: 18px;
-    line-height: 45px;
     padding-bottom: 120px;
 }
 .glaze-group{
-    line-height: 20px; 
+    line-height: 30px; 
     padding-top: 25px;
 }
 
 .pack-group{
-    line-height: 20px;
+    line-height: 30px;
     padding-top: 20px ;
     padding-bottom: 35px;
 }
 
 #dropdown-1 {
     width: 260px;
+    display: inline-block;
+    font-size: 18px;
 }
 #dropdown-2 {
     width: 260px;
+    display: inline-block;
+    font-size: 18px;
 }
 
 .cart {
     text-align: center;
     font-weight: bold;
-    word-spacing: 100px;
+    word-spacing: 74px;
+    font-size: 18px;
 }
 button {
     background-color: yellow;
     font-weight: bold;
+    font-size: 18px; 
+    padding: 14px 10px;
 }
 /* ------------------- break ---------------*/
 .product-image-cart{
