@@ -17,11 +17,10 @@ hr{
     font-size: 18px;
     color: black;
 }
-
 h1 {
-    padding-top: 4rem; 
+    padding-top: 3.5rem; 
     font-weight: normal;
-    font-size: 20px;
+    font-size: 22px;
     text-align: left;
 }
 p {
@@ -64,32 +63,36 @@ a {
     font-weight: normal;
 }
 /* ------------------- break ---------------*/
-.box-product-detail {
+.pg2-body {
+    display: flex; 
+}
+.img-left-div {
+    margin-left: 70px; 
+}
+.text-right-div {
+    margin: auto;
+
+}
+.box-product-img {
     width: center;
     margin: auto;
     text-align: center;
  }
-
 .product-image-productdetail{
     border: 2px solid black; 
     width: 600px;
 }
-
-.product-description-details {
-    margin: auto;
-    width: 210px;
-    font-size: 14px;
-}
 .description-details {
     text-align: left; 
+    font-size: 18px;
+    padding-bottom: 70px;
+    width: 260px;
 }
-
 .drop-down{
-    margin: auto;
-    width: 210px;
     text-align: left;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 45px;
+    padding-bottom: 120px;
 }
 .glaze-group{
     line-height: 20px; 
@@ -103,24 +106,22 @@ a {
 }
 
 #dropdown-1 {
-    width: 210px;
+    width: 260px;
 }
 #dropdown-2 {
-    width: 210px;
+    width: 260px;
 }
 
 .cart {
     text-align: center;
     font-weight: bold;
-    word-spacing: 45px;
+    word-spacing: 100px;
 }
 button {
     background-color: yellow;
     font-weight: bold;
 }
-
 /* ------------------- break ---------------*/
-
 .product-image-cart{
     border: 2px solid black; 
     width: 200px;
