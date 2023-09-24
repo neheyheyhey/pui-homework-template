@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styling.css">
+  <title>Product Detail Page</title>
+
+  <body>  
+    <header class="head">
+      <div class = "nav-bar-left"><a href="./index.html"> <img src="../assets/logo/logo-01.svg" alt="logo" style="width: 400px;"></a></div>
+      <div class = "nav-bar-right">
+        <nav class="menu">
+          <p><a class = "on" href="./index.html">PRODUCTS</a></p> 
+          <p><a class = "off" href="./cart.html">CART</a></p> 
+        </nav>
+        <hr>
+        <h1> Original cinnamon roll </h1>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="pg2-body"> 
+        <div class="img-left-div">
+          <div class="box-product-img">
+            <img class = "product-image-productdetail" src="../assets/products/original-cinnamon-roll.jpg" alt="og-cin-roll">
+          </div>
+        </div>
+        
+        <div class="text-right-div">
+          <div class="product-description-details">
+            <p class="description-details">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+          </div>  
+             
+  <!-- Used W3 schools for this to help me out with dropdown and how to construct one: https://www.w3schools.com/tags/tag_select.asp -->
+          <div class="drop-down">
+            <div class="glaze-group">
+              <label for="dropdown-1"> Glazing: <br></label>
+              <select name="Keep original" id="dropdown-1">
+              <option value="Keep origninal"> Keep original</option>
+              <option value="Sugar milk"> Sugar milk</option>
+              <option value="Vanilla milk" >Vanilla milk</option>
+              <option value="Double chocolate"> Double chocolate</option>
+              </select>
+            </div>
+            <div class="pack-group">
+              <label for="dropdown-2"> Pack size:<br></label>
+              <select name="one" id="dropdown-2">
+                <option value="one"> 1</option>
+                <option value="three"> 3</option>
+                <option value="six"> 6</option>
+                <option value="twelve" > 12</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cart">
+            <p> $2.49 <button> Add to Cart </button></p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
