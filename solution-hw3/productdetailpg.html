@@ -2,6 +2,7 @@
 <html lang="en">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styling.css">
+  <script defer src="./java-script/main_javascript.js"></script>
   <title>Product Detail Page</title>
 
   <body>  
@@ -13,7 +14,7 @@
           <p><a class = "off" href="./cart.html">CART</a></p> 
         </nav>
         <hr>
-        <h1> Original cinnamon roll </h1>
+        <h1> Our hand-made cinnamon rolls </h1>
       </div>
     </header>
 
@@ -35,26 +36,21 @@
           <div class="drop-down">
             <div class="glaze-group">
               <label for="dropdown-1"> Glazing: <br></label>
-              <select name="Keep original" id="dropdown-1">
-              <option value="Keep origninal"> Keep original</option>
-              <option value="Sugar milk"> Sugar milk</option>
-              <option value="Vanilla milk" >Vanilla milk</option>
-              <option value="Double chocolate"> Double chocolate</option>
+              <select id="dropdown-1"
+                onchange="glazingChange(this)">
               </select>
             </div>
             <div class="pack-group">
               <label for="dropdown-2"> Pack size:<br></label>
-              <select name="one" id="dropdown-2">
-                <option value="one"> 1</option>
-                <option value="three"> 3</option>
-                <option value="six"> 6</option>
-                <option value="twelve" > 12</option>
+              <select id="dropdown-2"
+                onchange="sizeChange(this)">
               </select>
             </div>
           </div>
 
           <div class="cart">
-            <p> $2.49 <button> Add to Cart </button></p>
+            <p id="price"> $2.49 </p>
+            <button> Add to Cart </button>
           </div>
 
         </div>

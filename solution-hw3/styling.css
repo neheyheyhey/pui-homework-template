@@ -120,6 +120,10 @@ a {
 }
 
 .cart {
+    display:flex;  
+    justify-content: flex-end;  
+    gap: 50px; 
+
     text-align: center;
     font-weight: bold;
     word-spacing: 74px;
