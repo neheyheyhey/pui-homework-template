@@ -7,7 +7,7 @@ for(var i=0; i <  optionsGlaze.length; i++) {
     var choice = document.createElement("option"); 
     choice.textContent = type; 
     choice.value = optionsGlazeAdd [i];
-    console.log (choice); 
+    //console.log (choice); 
     glaze.add(choice); 
 }
 
@@ -43,7 +43,29 @@ function sizeChange(userInput) {
 
 let calcPrice = document.querySelector("#price");
 
+const  cart = []; 
+
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get("roll");
+const dict = rolls[rollType];
+console.log (rollType); 
+
+const pName = document.querySelector('#renamed-title'); 
+pName.innerHTML = rollType + " Cinnamon Roll"; 
+const pPrice = document.querySelector('#price'); 
+pPrice.innerHTML = "$" + dict["basePrice"];
+console.log(dict["basePrice"]);
+const pImage = document.querySelector('.product-image-productdetail'); 
+pImage.src = '../assets/products/' + dict.imageFile; 
+
 function total() {
-    let finalPrice = (Product.basePrice + Product.glazePrice)*Product.packPrice; 
+    let finalPrice = (dict["basePrice"] + Product.glazePrice)*Product.packPrice; 
+    console.log(dict["basePrice"]);
+    console.log(Product.glazePrice);
+    console.log(Product.packPrice);
     calcPrice.innerHTML = "$" + String(finalPrice.toFixed(2));
+    console.log(Product.packPrice);
+
 }
+
