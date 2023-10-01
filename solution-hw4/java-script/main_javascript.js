@@ -26,24 +26,27 @@ for(var i=0; i <  optionsSize.length; i++) {
 
 
 let Product = {
-    name: "Original Cinnamon Roll",
-    basePrice: 2.49, 
+    name: "Keep Original",
+    basePrice: 2.49,
+    sizeOpt: "1",
     glazePrice: 0,
     packPrice: 1, 
-}
+}; 
+ 
 
 function glazingChange(userInput) {
+    Product.name = glaze.options[glaze.selectedIndex].text;
+    console.log(Product.name); 
     Product.glazePrice = parseFloat(userInput.value);
     total();
 }
 function sizeChange(userInput) {
+    Product.sizeOpt = size.options[size.selectedIndex].text;
     Product.packPrice = parseFloat(userInput.value);
     total();
  }
 
 let calcPrice = document.querySelector("#price");
-
-const  cart = []; 
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
@@ -68,4 +71,28 @@ function total() {
     console.log(Product.packPrice);
 
 }
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+const  cart = []; 
+
+function addToCart() {
+    let rollGlazing = Product.name;
+    let packSize = Product.sizeOpt; 
+    console.log(packSize); 
+    let basePrice = dict["basePrice"]; 
+    const rollStore = new Roll(rollType, rollGlazing, packSize, basePrice);
+    cart.push(rollStore); 
+    console.log(cart); 
+}
+
+
+
 
