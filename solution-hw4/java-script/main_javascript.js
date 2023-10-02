@@ -36,7 +36,7 @@ let Product = {
 
 function glazingChange(userInput) {
     Product.name = glaze.options[glaze.selectedIndex].text;
-    console.log(Product.name); 
+    //console.log(Product.name); 
     Product.glazePrice = parseFloat(userInput.value);
     total();
 }
@@ -52,23 +52,23 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
 const dict = rolls[rollType];
-console.log (rollType); 
+//console.log (rollType); 
 
 const pName = document.querySelector('#renamed-title'); 
 pName.innerHTML = rollType + " Cinnamon Roll"; 
 const pPrice = document.querySelector('#price'); 
 pPrice.innerHTML = "$" + dict["basePrice"];
-console.log(dict["basePrice"]);
+//console.log(dict["basePrice"]);
 const pImage = document.querySelector('.product-image-productdetail'); 
 pImage.src = '../assets/products/' + dict.imageFile; 
 
 function total() {
     let finalPrice = (dict["basePrice"] + Product.glazePrice)*Product.packPrice; 
-    console.log(dict["basePrice"]);
-    console.log(Product.glazePrice);
-    console.log(Product.packPrice);
+    //console.log(dict["basePrice"]);
+    //console.log(Product.glazePrice);
+    //console.log(Product.packPrice);
     calcPrice.innerHTML = "$" + String(finalPrice.toFixed(2));
-    console.log(Product.packPrice);
+    //console.log(Product.packPrice);
 
 }
 
@@ -86,7 +86,7 @@ const  cart = [];
 function addToCart() {
     let rollGlazing = Product.name;
     let packSize = Product.sizeOpt; 
-    console.log(packSize); 
+    //console.log(packSize); 
     let basePrice = dict["basePrice"]; 
     const rollStore = new Roll(rollType, rollGlazing, packSize, basePrice);
     cart.push(rollStore); 
