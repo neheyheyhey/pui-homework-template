@@ -148,18 +148,17 @@ button {
     gap: 50px; 
 }
 .cart-description {
-    width: 60%;
+    width: 594px;
     flex: end; 
 }
 .cart-img-div {
-    width: 14%; 
 }
 .total {
     display: flex; 
     font-size: 18px; 
     justify-content: flex-end;    
     gap: 475px;
-    margin-right: 40px;
+    padding-right: 33px;
 }
 .checkout-but {
     display: flex; 
@@ -190,6 +189,10 @@ button {
     font-size: 10px;
     margin-top: 0;
     font-weight: bold;
+}
+.cart-price {
+    padding-right: 28px;
+    width: 80px;
 }
 /* ------------------- nav ---------------*/
 
