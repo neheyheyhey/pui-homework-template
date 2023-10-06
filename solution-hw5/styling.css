@@ -148,11 +148,10 @@ button {
     gap: 50px; 
 }
 .cart-description {
-    width: 594px;
+    width: 606px;
     flex: end; 
 }
-.cart-img-div {
-}
+
 .total {
     display: flex; 
     font-size: 18px; 
@@ -191,8 +190,9 @@ button {
     font-weight: bold;
 }
 .cart-price {
-    padding-right: 28px;
+    padding-right: 38px;
     width: 80px;
+    text-align: right; 
 }
 /* ------------------- nav ---------------*/
 
