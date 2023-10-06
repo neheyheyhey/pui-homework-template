@@ -2,9 +2,9 @@
 <html lang="en">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styling.css">
-  <script defer src="./java-script/main_javascript.js"></script>
   <script defer src="./java-script/rollsData.js"></script>
-
+  <script defer src="./java-script/cart.js"></script>
+  
   <title>Shopping Cart</title>
   
   <body>
@@ -21,34 +21,42 @@
     </header>
 
     <div class="overall">
-      <template id="finalCart">
-        <div class = "product-cart">
-            
-          <div class="cart-img-div">
-            <img class = "product-image-cart" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="chocroll">
-            <p id="remove-1">Remove</p>
-          </div>
-  
-          <div class="cart-description">
-            <div class="cart-name">
-              <p>Chocolate Cinnamon Roll</p> 
+      <div id="item-list">
+        <template id="finalCart">
+          <div class = "product-cart">
+        
+            <div class="cart-img-div">
+              <img class = "product-image-cart" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="chocroll">
+              <p id="remove-1">Remove</p>
             </div>
-            <div class="cart-glazing">
-              <p>Glazing: Sugar milk </p>
-            </div>
-            <div class="cart-packsize">
-              <p>Pack Size: 6</p>
+            <div class="cart-description">
+              <p class="cart-name">Original Cinnamon Roll</p>
+              <p class="cart-glazing">Glazing: Keep original</p>
+              <p class="cart-packsize">Pack Size: 1</p>
             </div>
             <div class = "cart-price">
-            <p> $27.45 </p>
-            </div>
-        </div>
-      </template>
+              <p class = "product-price">$27.45 </p>
+              </div>
+            <!-- <div class="cart-description">
+              <p class="cart-name"> Chocolate Cinnamon Roll</p>
+              </div>
+              <div class="cart-glazing">
+                <p>Glazing: Sugar milk </p>
+              </div>
+              <div class="cart-packsize">
+                <p>Pack Size: 6</p>
+              </div>
+              <div class = "cart-price">
+              <p> $27.45 </p>
+              </div> -->
+          </div>
+        </template>
+      </div>
         <div class="checkout">
           <hr>
           <div class="total">
             <p>Total</p>
-            <p>$29.94</p>
+            <p id="total-cart-price">$ 29.94</p>
           </div>
           <div class="checkout-but">
             <button> Checkout </button>
