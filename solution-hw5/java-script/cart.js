@@ -143,6 +143,3 @@ function updateTotalPrice() {
     console.log(tempPrice);
     totalPrice.innerText = '$ ' + tempPrice.toFixed(2);
 }
-
-
-
