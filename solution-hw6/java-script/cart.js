@@ -34,7 +34,9 @@ function cartAdd(rollType, rollGlazing, packSize, rollPrice) {
     const cinroll = new Roll(rollType, rollGlazing, packSize, rollPrice);
     cart.add(cinroll); 
     //console.log(cart);
-    return cinroll;
+    localStorage.setItem('cart', JSON.stringify(cart));
+    console.log('Cart Contents:', cart);
+    displayCart(cart);
 }
 
 function createElement(cinroll) {
@@ -143,3 +145,9 @@ function updateTotalPrice() {
     console.log(tempPrice);
     totalPrice.innerText = '$ ' + tempPrice.toFixed(2);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const storedCart = localStorage.getItem('cart');
+    const cart = storedCart ? JSON.parse(storedCart) : [];
+    displayCart(cart);
+});
