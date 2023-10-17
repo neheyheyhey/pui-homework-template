@@ -1,0 +1,234 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    width: 100%; 
+}
+hr{
+    height: 5px; 
+    background-color: black;
+}
+.on {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+}
+.off {
+    font-size: 18px;
+    color: black;
+}
+h1 {
+    padding-top: 3.5rem; 
+    font-weight: normal;
+    font-size: 22px;
+    text-align: left;
+}
+p {
+    color:black;
+}
+a {
+    text-decoration: none;
+}
+.product-card { 
+    width: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 1px; 
+    margin-bottom: 15px;
+}
+.product-card:hover {
+    background-color: yellow;
+    font-weight:bold;
+}
+.product-image {
+    border: 2px solid black; 
+    width: 285px;
+}
+.product-description {
+    text-align: left;
+    margin: auto;
+    width: 285px;
+}
+.product-name {
+    color:black;
+    text-decoration: underline;
+    margin: 0;
+}
+.product-price {
+    margin:0;
+    font-weight: normal;
+}
+/* ------------------- break ---------------*/
+.pg2-body {
+    display: flex; 
+}
+.img-left-div {
+    margin-left: 70px; 
+}
+.text-right-div {
+    margin: auto;
+
+}
+.box-product-img {
+    width: center;
+    margin: auto;
+    text-align: center;
+ }
+.product-image-productdetail{
+    border: 2px solid black; 
+    width: 600px;
+}
+.description-details {
+    text-align: left; 
+    font-size: 18px;
+    padding-bottom: 70px;
+    width: 260px;
+}
+.drop-down{
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 120px;
+}
+.glaze-group{
+    line-height: 30px; 
+    padding-top: 25px;
+}
+
+.pack-group{
+    line-height: 30px;
+    padding-top: 20px ;
+    padding-bottom: 35px;
+}
+
+#dropdown-1 {
+    width: 260px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 10px; 
+    border: 2px solid black;
+}
+#dropdown-2 {
+    width: 260px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 10px; 
+    border: 2px solid black;
+}
+
+.cart {
+    display:flex;  
+    justify-content: flex-end;  
+    gap: 50px; 
+
+    text-align: center;
+    font-weight: bold;
+    word-spacing: 74px;
+    font-size: 18px;
+}
+button {
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 18px; 
+    padding: 10px 10px;
+    border: 2px solid black;
+}
+/* ------------------- pg3 ---------------*/
+.box-product-detail {
+    display: flex; 
+    margin-left: 34.72%;
+    flex-flow: column wrap; 
+    justify-content: flex-start;
+}
+.product-cart {
+    justify-content: flex-end;
+    gap: 50px; 
+}
+.cart-description {
+    width: 606px;
+    flex: end; 
+}
+
+.total {
+    display: flex; 
+    font-size: 18px; 
+    justify-content: flex-end;    
+    gap: 475px;
+    padding-right: 33px;
+}
+.checkout-but {
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 39px;
+    margin-top: 20px; 
+}
+.product-image-cart{
+    border: 2px solid black; 
+    width: 115px;
+}
+.product-description-details {
+    width: 210px;
+    font-size: 18px;
+}
+.product-cart {
+    font-size: 18px;
+    text-align: left;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 1px; 
+    margin-bottom: 15px;
+
+    display: flex;
+}
+#remove-1 {
+    text-decoration: underline;
+    font-size: 10px;
+    margin-top: 0;
+    font-weight: bold;
+}
+.cart-price {
+    padding-right: 38px;
+    width: 80px;
+    text-align: right; 
+}
+/* ------------------- nav ---------------*/
+
+.head {
+    display: flex;
+    padding-top: 15px; 
+    padding-bottom: 40px; 
+}
+.nav-bar-left {
+    width: 55%; 
+}
+.nav-bar-right {
+    width:100%; 
+}
+.menu { 
+    text-align: center; 
+
+    padding: 20px; 
+    width: 92%; 
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+.box {
+    width: 420px;
+    margin: auto;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap; 
+    width:100%; 
+    justify-content: space-evenly;
+}
+.row1 {
+    display: flex;
+    gap: 35px;
+}
+
+
